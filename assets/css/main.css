@@ -962,7 +962,7 @@ header.page-title hr {
   background-image: url("../images/ferrari-vermelha-1200.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: 80;
+  background-position-x: 80%;
   background-position-y: center;
   flex-direction: column;
   align-items: flex-end;
@@ -995,7 +995,7 @@ header.page-title hr {
   border-radius: var(--border-radius);
   background: transparent;
   color: var(--black);
-  color: #fff;
+  color: inherit;
   border: 1px solid var(--white);
   border-radius: 6px;
 }
@@ -1009,35 +1009,35 @@ header.page-title hr {
   background-color: var(--white);
   color: var(--black);
 }
-
-.galle {
+#home .gallery {
   flex-direction: column;
   min-width: 320px;
 }
-.galle figure {
+#home .gallery figure {
   width: 100%;
   margin: 0;
   margin-top: 1px;
   position: relative;
 }
-.galle figure img, .galle figure picture {
+#home .gallery figure img,
+#home .gallery figure picture {
   width: 100%;
 }
-.galle figure figcaption {
+#home .gallery figure figcaption {
   background-color: var(--black-75);
   padding: 15px 25px;
   position: absolute;
   left: 0;
   bottom: 20px;
 }
-.galle figure figcaption h2 {
+#home .gallery figure figcaption h2 {
   font-size: 24px;
   font-weight: bold;
   color: var(--white);
   margin: 0;
 }
-.galle figure figcaption p {
-  font-size: 15px;
+#home .gallery figure figcaption p {
+  font-size: 16px;
   color: var(--gray-3);
   margin: 0;
 }
@@ -1053,7 +1053,7 @@ header.page-title hr {
     margin: 0;
     padding: 0;
   }
-  #home header li {
+  #home header ul li {
     margin: 0 25px;
     font-size: 30px;
   }
@@ -1100,13 +1100,12 @@ header.page-title hr {
   display: block;
   font-weight: bold;
 }
-.service .service-wrap {
+.service .service-wrap,
+.service .icons,
+.service figure {
   flex-direction: column;
 }
-.service .service-wrap .icons {
-  flex-direction: column;
-}
-.service .service-wrap .service-wrap a {
+.service .service-wrap > a {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -1125,26 +1124,29 @@ header.page-title hr {
   background-color: var(--green);
   color: var(--white);
 }
-.service .service-wrap .service-wrap a:hover {
+.service .service-wrap > a:hover {
   background-color: var(--black-10);
 }
-.service .service-wrap .service-wrap a:active {
+.service .service-wrap > a:active {
   background-color: var(--black-75);
 }
-.service .service-wrap .service-wrap a:hover {
+.service .service-wrap > a:hover {
   background-color: var(--green-hover);
 }
-.service .service-wrap .service-wrap a:active {
+.service .service-wrap > a:active {
   background-color: var(--green-active);
 }
-.service .service-wrap .service-wrap .icons figure figcaption {
+.service .service-wrap .icons figure {
+  align-items: center;
+}
+.service .service-wrap .icons figure figcaption {
   text-align: center;
   font-size: 16px;
   font-weight: bold;
   color: var(--gray-0);
   margin-top: 20px;
 }
-.service .service-wrap .service-wrap .icons figure img {
+.service .service-wrap .icons figure img {
   width: 100%;
   max-width: 100px;
 }
@@ -1154,14 +1156,221 @@ header.page-title hr {
     align-items: center;
     flex-direction: column-reverse;
   }
-  .service .service-wrap a {
-    width: 200xp;
-    margin: 20px 0;
+  .service .service-wrap > a {
+    width: 200px;
+    margin: 50px 0;
   }
   .service .service-wrap .icons {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+#contact {
+  flex-direction: column;
+}
+#contact p {
+  font-size: 15px;
+  color: var(--gray-1);
+  font-weight: 600;
+}
+#contact h2 {
+  padding: 0 15px;
+  margin: 0;
+  font-size: 27px;
+  font-weight: bold;
+  color: var(--dark-0);
+  text-transform: uppercase;
+}
+#contact > section {
+  flex-direction: column;
+}
+#contact #map {
+  width: 100%;
+  height: 263px;
+  background: url("../images/mapa.png") no-repeat;
+  margin-top: var(--space);
+}
+#contact .contacts {
+  margin: 0;
+  margin-top: 30px;
+  padding: 1em;
+  flex-direction: column;
+}
+#contact .contacts li {
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4em;
+  text-align: center;
+  border: solid 1px var(--gray-3);
+  width: 100%;
+  color: var(--gray-6);
+}
+#contact .contacts li img {
+  max-width: 100px;
+  margin: 0 auto;
+  margin-top: calc(var(--space) * -3);
+  background-color: var(--white);
+  padding: 0 15px;
+}
+#contact .contacts li .title {
+  font-weight: 600;
+  margin: 0;
+  font-size: 24px;
+}
+#contact .contacts li p {
+  font-weight: 300;
+  margin: 0;
+  font-size: 25px;
+}
+
+@media (min-width: 992px) {
+  #contact h2 {
+    font-size: calc(var(--space) * 3);
+  }
+  #contact > section {
+    flex-direction: row;
+  }
+  #contact > section form, #contact > section #map {
+    flex: 1;
+  }
+  #contact > section form {
+    max-width: unset;
+  }
+  #contact > section #map {
+    margin-left: 0;
+    height: 570px;
+  }
+  #contact .contacts {
+    flex-direction: row;
+  }
+  #contact .contacts li {
+    margin-right: 1em;
+    margin-bottom: 2em;
+  }
+  #contact .contacts li:last-child {
+    margin-right: unset;
+  }
+  #contact textarea {
+    height: 245px;
+  }
+}
+#schedules-times main {
+  padding: var(--space);
+}
+#schedules-times h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+#schedules-times h2 small {
+  display: block;
+  font-size: 14px;
+  color: var(--gray-9);
+}
+@media (min-width: 768px) {
+  #schedules-times h2 {
+    font-size: 22px;
+  }
+}
+#schedules-times .options {
+  margin-top: var(--space);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#schedules-times .options label {
+  width: calc(50% - var(--space) / 2);
+  margin-bottom: var(--space);
+}
+#schedules-times .options label input {
+  display: none;
+}
+#schedules-times .options label input:checked + span {
+  background-color: var(--blue);
+  color: var(--white);
+}
+#schedules-times .options label span {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--black);
+  background-color: var(--gray-10);
+}
+#schedules-times .options label span:hover {
+  background-color: var(--black-10);
+}
+#schedules-times .options label span:active {
+  background-color: var(--black-75);
+}
+@media (min-width: 768px) {
+  #schedules-times .options label {
+    width: calc(25% - var(--space));
+    margin-right: var(--space);
+  }
+}
+@media (min-width: 768px) {
+  #schedules-times .options {
+    max-width: 700px;
+    justify-content: flex-start;
+  }
+}
+
+#schedules-services main {
+  padding: var(--space);
+}
+#schedules-services main .options {
+  flex-direction: column;
+}
+#schedules-services main .options label {
+  margin-bottom: var(--space);
+  display: flex;
+}
+#schedules-services main .options label .square {
+  width: 22px;
+  height: 22px;
+  border: var(--gray-8) 2px solid;
+  padding: 3px;
+}
+#schedules-services main .options label .square > div {
+  flex: 1;
+  background-color: var(--blue);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#schedules-services main .options label:hover {
+  cursor: pointer;
+}
+#schedules-services main .options label:hover .square > div {
+  opacity: 0.2;
+}
+#schedules-services main .options label input {
+  display: none;
+}
+#schedules-services main .options label input:checked + .square > div {
+  opacity: 1;
+}
+#schedules-services main .options label .content {
+  margin-left: var(--space);
+  flex-direction: column;
+  font-size: 16px;
+  color: var(--dark-0);
+}
+#schedules-services main .options label .content .description {
+  font-size: 14px;
+  color: var(--gray-2);
+}
+#schedules-services main .options label .content .price {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
