@@ -1589,6 +1589,9 @@ header.page-title hr {
 #auth > section form .actions {
   justify-content: space-between;
 }
+#auth > section form .actions.flex-end {
+  justify-content: flex-end;
+}
 #auth > section form .actions > div {
   flex-direction: column;
 }
