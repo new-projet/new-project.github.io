@@ -30,7 +30,7 @@
     <main class="page" id="auth">
         <section>
             <a href="index.html"><img src="assets/images/ferrari-logo.svg" alt="Home" /></a>
-            <form class="">
+            <form class="hide">
                 <h1>Autenticação</h1>
                 <hr />
 
@@ -44,8 +44,70 @@
                     <button type="submit">Próxima</button>
                 </div>
             </form>
-            <form class="hide"></form>
-            <form class="hide"></form>
+            <form class=" hide">
+                <h1>Fazer login</h1>
+                <hr />
+
+                <div class="field">
+                    <input type="email" name="email" id="email-login">
+                    <label for="email-login">E-mail</label>
+                </div>
+
+                <div class="field">
+                    <input type="password" name="password" id="password">
+                    <label for="password">Digite sua Senha</label>
+                </div>
+
+                <div class="actions">
+                    <div>
+                        <a href="auth.html#forget" class="link">
+                            Esqueci a senha
+                        </a>
+                        <a href="auth.html" class="link">
+                            Este não é o seu e-mail
+                        </a>
+                    </div>
+                    <button type="submit">Login</button>
+                </div>
+
+
+            </form>
+            <form class="register hide">
+                <h1>Criar conta</h1>
+                <hr />
+                
+                <div class="field">
+                    <input type="text" name="email" id="email-register">
+                    <label for="email-register">E-mail</label>
+                </div>
+
+                <div class="field">
+                    <input type="text" name="name" id="name-register">
+                    <label for="name-register">Nome Completo</label>
+                </div>
+
+                <div class="field">
+                    <input type="date" name="birth_at" id="birth_at">
+                    <label for="birth_at">Data de Nascimento</label>
+                </div>
+
+                <div class="field">
+                    <input type="password" name="password_new" id="password_new">
+                    <label for="password_new">Crie uma Senha</label>
+                </div>
+
+                <div class="field">
+                    <input type="password" name="password_confirm" id="password_confirm">
+                    <label for="password_confirm">Confirme a Senha</label>
+                </div>
+
+
+                <div class="actions">
+                    <a href="auth.html#login" class="link">Já tem uma conta?</a>
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+            
             <form class="hide"></form>
             <form class="hide"></form>
 
