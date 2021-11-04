@@ -1557,6 +1557,14 @@ header.page-title hr {
   position: relative;
   left: 0;
   width: 100vw;
+  transform-style: preserve-3d;
+  transition-duration: 1.5s;
+  transform-origin: center;
+  overflow: hidden;
+}
+#auth > section form.effect {
+  transform: translateX(550px);
+  opacity: 0;
 }
 #auth > section form .message {
   display: flex;
@@ -1635,6 +1643,75 @@ header.page-title hr {
     width: 100%;
     padding: 100px 50px 50px 50px;
     margin-top: 100px;
+  }
+}
+#error .desktop {
+  display: none;
+}
+#error header {
+  margin: 0;
+  margin-top: 120px;
+  padding: 0 3em;
+  height: initial;
+}
+#error header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+#error header h1 b {
+  color: var(--red);
+}
+#error p {
+  padding: 0 3em;
+  font-size: 20px;
+  color: var(--gray-0);
+}
+#error .columns, #error .column {
+  flex-direction: column;
+}
+#error img {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+@media (min-width: 500px) {
+  #error header {
+    height: initial;
+    min-height: initial;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #error {
+    min-height: calc(100vh - 325px);
+  }
+  #error .desktop {
+    display: flex;
+  }
+  #error .mobile {
+    display: none;
+  }
+  #error p {
+    font-size: 20px;
+  }
+  #error .columns {
+    flex-direction: row;
+    align-items: center;
+  }
+  #error .column {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 396px);
+  }
+  #error .column header {
+    justify-content: center;
+  }
+  #error .column header h1 {
+    font-size: 4em;
   }
 }
 

@@ -4,6 +4,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    
     .hide {
         display: none;
     }
@@ -32,6 +33,14 @@
             position: relative;
             left: 0;
             width: 100vw;
+            transform-style: preserve-3d;
+            transition-duration: 1.5s;
+            transform-origin: center;
+            overflow: hidden;
+            &.effect {
+                transform: translateX(550px);
+                opacity: 0;
+            }
             .message {
                 display: flex;
                 align-items: center;
