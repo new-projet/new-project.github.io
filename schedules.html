@@ -181,102 +181,97 @@
       <hr class="italy" />
     </header>
 
-    <section class="page blue" id="schedules-services">
+    <section class="page" id="schedules">
       <header>
-        <h1>Escolha os Serviços</h1>
+        <h1>Agendamentos</h1>
       </header>
 
-      <div class="with-aside">
-        <main>
-          <div class="options">
-            <label>
-              <input type="checkbox" name="service" value="1" checked />
-              <div class="square">
-                <div></div>
-              </div>
-              <div class="content">
-                <div class="name">Revisão</div>
-                <div class="description">Veriﬁcação mínima necessária.</div>
-                <div class="price">R$100,00</div>
-              </div>
-            </label>
-            <label>
-              <input type="checkbox" name="service" value="1" checked />
-              <div class="square">
-                <div></div>
-              </div>
-              <div class="content">
-                <div class="name">Alinhamento</div>
-                <div class="description">Alinhamento e balanceamento.</div>
-                <div class="price">R$400,00</div>
-              </div>
-            </label>
-            <label>
-              <input type="checkbox" name="service" value="1" checked />
-              <div class="square">
-                <div></div>
-              </div>
-              <div class="content">
-                <div class="name">Filtros</div>
-                <div class="description">
-                  Troca de filtro de ar e combustível.
-                </div>
-                <div class="price">R$200,00</div>
-              </div>
-            </label>
-          </div>
+      <main>
+        <header class="page-title">
+          <h2>Próximos Agendamentos</h2>
+          <hr />
+        </header>
 
-          <form action="schedules-services.html">
-            <footer class="fixed">
-              <a href="schedules-time-options.html">Voltar</a>
-              <button type="submit">Continuar</button>
-            </footer>
-          </form>
-        </main>
+        <ul>
+          <li>
+            <section>
+              <div>
+                <strong>Data</strong>
+                <span>02/07/2020 às 9:00</span>
+              </div>
+              <div>
+                <strong>Status</strong>
+                <span>Confirmado</span>
+              </div>
+              <div>
+                <strong>Valor</strong>
+                <span>R$20,00</span>
+              </div>
+              <div>
+                <strong>Serviço</strong>
+                <span>Revisão do Veículo</span>
+              </div>
+            </section>
+            <button type="button" class="cancel">Cancelar</button>
+          </li>
+          <li>
+            <section>
+              <div>
+                <strong>Data</strong>
+                <span>02/07/2020 às 9:00</span>
+              </div>
+              <div>
+                <strong>Status</strong>
+                <span>Confirmado</span>
+              </div>
+              <div>
+                <strong>Valor</strong>
+                <span>R$20,00</span>
+              </div>
+              <div>
+                <strong>Serviço</strong>
+                <span>Revisão do Veículo</span>
+              </div>
+            </section>
+            <button type="button" class="cancel">Cancelar</button>
+          </li>
+        </ul>
 
-        <aside id="aside-services">
-          <header>Resumo</header>
-          <section>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Alinhamento</td>
-                  <td class="price">R$ 0,00</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <footer>
-            <button type="button" id="btn-summary-toggle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="64.317"
-                height="64.317"
-                viewBox="0 0 64.317 64.317"
-              >
-                <path
-                  d="M9.779,27.858l12.3-12.274,12.3,12.274,3.779-3.779L22.079,8,6,24.079Z"
-                  transform="translate(10.079 13.439)"
-                />
-              </svg>
-            </button>
-            <div>
-              <span>Total</span>
-              <span class="total">R$ 0,00</span>
-            </div>
+        <header class="page-title">
+          <h2>Histórico</h2>
+          <hr />
+        </header>
+
+        <ul>
+          <li>
+            <section>
+              <div>
+                <strong>Data</strong>
+                <span>02/07/2020 às 9:00</span>
+              </div>
+              <div>
+                <strong>Status</strong>
+                <span>Confirmado</span>
+              </div>
+              <div>
+                <strong>Valor</strong>
+                <span>R$20,00</span>
+              </div>
+              <div>
+                <strong>Serviço</strong>
+                <span>Revisão do Veículo</span>
+              </div>
+            </section>
+            <button type="button" class="cancel">Cancelar</button>
+          </li>
+        </ul>
+
+        <form>
+          <footer class="fixed">
+            <button type="submit">Novo Agendamento</button>
           </footer>
-        </aside>
-      </div>
+        </form>
+      </main>
     </section>
-
-    <script>
-      const painel = document.querySelector('#aside-services');
-      const botao = document.querySelector('#btn-summary-toggle');
-
-      botao.addEventListener('click', () => {
-        painel.classList.toggle('open');
-      });
-    </script>
-    <script src="assets/js/menu.js"></script>
   </body>
 </html>

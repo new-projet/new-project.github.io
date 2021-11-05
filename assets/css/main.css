@@ -263,7 +263,12 @@ header.page-title {
   align-items: flex-start;
   width: 100%;
 }
-header.page-title h1, header.page-title h2, header.page-title h3, header.page-title h4, header.page-title h5, header.page-title h6 {
+header.page-title h1,
+header.page-title h2,
+header.page-title h3,
+header.page-title h4,
+header.page-title h5,
+header.page-title h6 {
   color: var(--green);
   margin: 0;
   font-size: 32px;
@@ -322,9 +327,10 @@ header.page-title hr {
   justify-content: space-between;
   align-items: center;
   padding: var(--space);
-  z-index: 4;
+  z-index: 1;
 }
-.page footer.fixed button, .page footer.fixed a {
+.page footer.fixed button,
+.page footer.fixed a {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -343,19 +349,24 @@ header.page-title hr {
   background-color: var(--gray-3);
   color: var(--gray-0);
 }
-.page footer.fixed button:hover, .page footer.fixed a:hover {
+.page footer.fixed button:hover,
+.page footer.fixed a:hover {
   background-color: var(--black-10);
 }
-.page footer.fixed button:active, .page footer.fixed a:active {
+.page footer.fixed button:active,
+.page footer.fixed a:active {
   background-color: var(--black-75);
 }
-.page footer.fixed button:hover, .page footer.fixed a:hover {
+.page footer.fixed button:hover,
+.page footer.fixed a:hover {
   background-color: var(--gray-hover);
 }
-.page footer.fixed button:active, .page footer.fixed a:active {
+.page footer.fixed button:active,
+.page footer.fixed a:active {
   background-color: var(--gray-active);
 }
-.page footer.fixed button[type=submit], .page footer.fixed a.black {
+.page footer.fixed button[type=submit],
+.page footer.fixed a.black {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -374,22 +385,27 @@ header.page-title hr {
   background-color: var(--black);
   color: var(--white);
 }
-.page footer.fixed button[type=submit]:hover, .page footer.fixed a.black:hover {
+.page footer.fixed button[type=submit]:hover,
+.page footer.fixed a.black:hover {
   background-color: var(--black-10);
 }
-.page footer.fixed button[type=submit]:active, .page footer.fixed a.black:active {
+.page footer.fixed button[type=submit]:active,
+.page footer.fixed a.black:active {
   background-color: var(--black-75);
 }
-.page footer.fixed button[type=submit]:hover, .page footer.fixed a.black:hover {
+.page footer.fixed button[type=submit]:hover,
+.page footer.fixed a.black:hover {
   background-color: var(--black-hover);
 }
-.page footer.fixed button[type=submit]:active, .page footer.fixed a.black:active {
+.page footer.fixed button[type=submit]:active,
+.page footer.fixed a.black:active {
   background-color: var(--black-active);
 }
 .page.blue > header {
   background-color: var(--blue);
 }
-.page.blue footer.fixed button[type=submit], .page.blue footer.fixed a.black {
+.page.blue footer.fixed button[type=submit],
+.page.blue footer.fixed a.black {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -408,22 +424,27 @@ header.page-title hr {
   background-color: var(--blue);
   color: var(--white);
 }
-.page.blue footer.fixed button[type=submit]:hover, .page.blue footer.fixed a.black:hover {
+.page.blue footer.fixed button[type=submit]:hover,
+.page.blue footer.fixed a.black:hover {
   background-color: var(--black-10);
 }
-.page.blue footer.fixed button[type=submit]:active, .page.blue footer.fixed a.black:active {
+.page.blue footer.fixed button[type=submit]:active,
+.page.blue footer.fixed a.black:active {
   background-color: var(--black-75);
 }
-.page.blue footer.fixed button[type=submit]:hover, .page.blue footer.fixed a.black:hover {
+.page.blue footer.fixed button[type=submit]:hover,
+.page.blue footer.fixed a.black:hover {
   background-color: var(--blue-hover);
 }
-.page.blue footer.fixed button[type=submit]:active, .page.blue footer.fixed a.black:active {
+.page.blue footer.fixed button[type=submit]:active,
+.page.blue footer.fixed a.black:active {
   background-color: var(--blue-active);
 }
 .page.green > header {
   background-color: var(--green);
 }
-.page.green footer.fixed button[type=submit], .page.green footer.fixed a.black {
+.page.green footer.fixed button[type=submit],
+.page.green footer.fixed a.black {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -442,16 +463,20 @@ header.page-title hr {
   background-color: var(--green);
   color: var(--white);
 }
-.page.green footer.fixed button[type=submit]:hover, .page.green footer.fixed a.black:hover {
+.page.green footer.fixed button[type=submit]:hover,
+.page.green footer.fixed a.black:hover {
   background-color: var(--black-10);
 }
-.page.green footer.fixed button[type=submit]:active, .page.green footer.fixed a.black:active {
+.page.green footer.fixed button[type=submit]:active,
+.page.green footer.fixed a.black:active {
   background-color: var(--black-75);
 }
-.page.green footer.fixed button[type=submit]:hover, .page.green footer.fixed a.black:hover {
+.page.green footer.fixed button[type=submit]:hover,
+.page.green footer.fixed a.black:hover {
   background-color: var(--green-hover);
 }
-.page.green footer.fixed button[type=submit]:active, .page.green footer.fixed a.black:active {
+.page.green footer.fixed button[type=submit]:active,
+.page.green footer.fixed a.black:active {
   background-color: var(--green-active);
 }
 
@@ -467,13 +492,18 @@ header.page-title hr {
   .page footer.fixed {
     justify-content: flex-start;
   }
-  .page footer.fixed button + button, .page footer.fixed a + a, .page footer.fixed button + a, .page footer.fixed a + button {
+  .page footer.fixed button + button,
+.page footer.fixed a + a,
+.page footer.fixed button + a,
+.page footer.fixed a + button {
     margin-right: var(--space);
   }
-  .page footer.fixed button, .page footer.fixed a {
+  .page footer.fixed button,
+.page footer.fixed a {
     order: 1;
   }
-  .page footer.fixed button:first-child, .page footer.fixed a:first-child {
+  .page footer.fixed button:first-child,
+.page footer.fixed a:first-child {
     order: 2;
   }
 }
@@ -1371,6 +1401,484 @@ header.page-title hr {
 }
 #schedules-services main .options label .content .price {
   font-weight: bold;
+}
+
+#change-photo form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  #change-photo form {
+    align-items: flex-start;
+  }
+}
+#change-photo form #photo {
+  display: none;
+}
+#change-photo form img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: var(--space) 0;
+}
+#change-photo form .choose-file {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--black);
+  background-color: var(--green);
+  color: var(--white);
+  min-width: 256px;
+}
+#change-photo form .choose-file:hover {
+  background-color: var(--black-10);
+}
+#change-photo form .choose-file:active {
+  background-color: var(--black-75);
+}
+#change-photo form .choose-file:hover {
+  background-color: var(--green-hover);
+}
+#change-photo form .choose-file:active {
+  background-color: var(--green-active);
+}
+
+#change-password form .page-title {
+  margin: var(--space) 0;
+  width: 100%;
+}
+
+#schedules footer.fixed {
+  justify-content: center;
+}
+#schedules footer.fixed button {
+  min-width: 220px;
+}
+@media (min-width: 1200px) {
+  #schedules footer.fixed {
+    justify-content: flex-start;
+  }
+}
+#schedules ul {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  #schedules ul {
+    max-width: 1275px;
+  }
+}
+#schedules ul li {
+  flex-direction: column;
+  padding: 0 var(--space);
+}
+@media (min-width: 1200px) {
+  #schedules ul li {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#schedules ul li > section {
+  flex-wrap: wrap;
+}
+#schedules ul li > section > div {
+  flex-direction: column;
+  width: 50%;
+  font-size: 16px;
+  color: var(--dark-0);
+}
+#schedules ul li > section > div strong {
+  font-weight: bold;
+}
+#schedules ul li > section > div strong,
+#schedules ul li > section > div span {
+  margin: 10px 0;
+}
+@media (min-width: 1200px) {
+  #schedules ul li > section > div {
+    width: 200px;
+  }
+}
+#schedules ul li button {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--black);
+  background-color: var(--red);
+  color: var(--white);
+  width: 150px;
+  align-self: center;
+}
+#schedules ul li button:hover {
+  background-color: var(--black-10);
+}
+#schedules ul li button:active {
+  background-color: var(--black-75);
+}
+#schedules ul li button:hover {
+  background-color: var(--red-hover);
+}
+#schedules ul li button:active {
+  background-color: var(--red-active);
+}
+#schedules ul li + li {
+  border-top: var(--gray-10) 1px solid;
+  margin-top: var(--space);
+  padding-top: calc(var(--space) / 2);
+}
+
+#auth {
+  min-width: 300px;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#auth .hide {
+  display: none;
+}
+#auth > section {
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#auth > section a {
+  display: contents;
+}
+#auth > section a img {
+  position: absolute;
+  width: 100px;
+  top: 40px;
+  z-index: 1;
+}
+#auth > section p {
+  color: var(--gray-9);
+  font-size: 1em;
+}
+#auth > section form {
+  margin-top: 170px;
+  position: relative;
+  left: 0;
+  width: 100vw;
+  transform-style: preserve-3d;
+  transition-duration: 1.5s;
+  transform-origin: center;
+  overflow: hidden;
+}
+#auth > section form.effect {
+  transform: translateX(550px);
+  opacity: 0;
+}
+#auth > section form .message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#auth > section form .message img {
+  margin-right: 5px;
+}
+#auth > section form .message span {
+  font-weight: 600;
+  color: var(--dark-0);
+}
+#auth > section form h1 {
+  text-align: center;
+  color: var(--green);
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px auto;
+}
+#auth > section form hr {
+  border: none;
+  border-top: 4px solid var(--red);
+  width: 68px;
+  margin-bottom: 30px;
+}
+#auth > section form .field {
+  width: 100%;
+}
+#auth > section form .actions {
+  justify-content: space-between;
+}
+#auth > section form .actions.flex-end {
+  justify-content: flex-end;
+}
+#auth > section form .actions > div {
+  flex-direction: column;
+}
+#auth > section form .actions > div a {
+  display: flex;
+}
+#auth > section form .actions .link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-0);
+  text-decoration: none;
+}
+#auth > section form .actions .link + .link {
+  margin-top: 10px;
+}
+#auth > section form .actions .link:hover {
+  color: var(--gray-11);
+}
+#auth > section form .actions .link:active {
+  color: var(--black);
+}
+#auth > section form.forget .actions {
+  justify-content: flex-end;
+}
+
+@media (min-width: 500px) {
+  #auth {
+    height: initial;
+    min-height: 100vh;
+  }
+  #auth > section {
+    width: 500px;
+    height: initial;
+  }
+  #auth > section a img {
+    top: 25px;
+  }
+  #auth > section form {
+    border: var(--gray-8) 1px solid;
+    border-radius: 10px;
+    width: 100%;
+    padding: 100px 50px 50px 50px;
+    margin-top: 100px;
+  }
+}
+#error .desktop {
+  display: none;
+}
+#error header {
+  margin: 0;
+  margin-top: 120px;
+  padding: 0 3em;
+  height: initial;
+}
+#error header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+#error header h1 b {
+  color: var(--red);
+}
+#error p {
+  padding: 0 3em;
+  font-size: 20px;
+  color: var(--gray-0);
+}
+#error .columns, #error .column {
+  flex-direction: column;
+}
+#error img {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+@media (min-width: 500px) {
+  #error header {
+    height: initial;
+    min-height: initial;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #error {
+    min-height: calc(100vh - 325px);
+  }
+  #error .desktop {
+    display: flex;
+  }
+  #error .mobile {
+    display: none;
+  }
+  #error p {
+    font-size: 20px;
+  }
+  #error .columns {
+    flex-direction: row;
+    align-items: center;
+  }
+  #error .column {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 396px);
+  }
+  #error .column header {
+    justify-content: center;
+  }
+  #error .column header h1 {
+    font-size: 4em;
+  }
+}
+.with-aside > main {
+  flex: 1;
+}
+.with-aside > main .options {
+  width: 100%;
+}
+.with-aside > main > form {
+  width: 0;
+}
+
+#aside-services {
+  flex-direction: column;
+  background-color: var(--gray-12);
+  position: fixed;
+  bottom: 80px;
+  width: 100%;
+  height: 50px;
+  max-height: calc(100vh - 140px);
+  transition: all 0.2s ease-in-out;
+}
+#aside-services header {
+  font-size: 32px;
+  color: var(--dark-0);
+  justify-content: center;
+  padding: var(--space);
+  margin-top: calc(var(--space) * 2);
+  display: none;
+}
+#aside-services section {
+  display: none;
+  flex: 1;
+  align-items: flex-start;
+  padding: var(--space);
+  overflow: auto;
+}
+#aside-services section table {
+  width: 100%;
+}
+#aside-services section table .price {
+  text-align: right;
+}
+#aside-services section table td {
+  border-top: var(--gray-3) 1px solid;
+  padding: var(--space) 0;
+}
+#aside-services section table tr:last-child td {
+  border-bottom: var(--gray-3) 1px solid;
+}
+#aside-services footer {
+  height: 50px;
+  padding: var(--space);
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark-0);
+  font-size: 18px;
+  border-top: var(--gray-3) 1px solid;
+  border-bottom: var(--gray-3) 1px solid;
+}
+#aside-services footer .total {
+  font-weight: bold;
+  margin-left: var(--space);
+}
+#aside-services footer button {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--black);
+  min-width: 50px;
+}
+#aside-services footer button:hover {
+  background-color: var(--black-10);
+}
+#aside-services footer button:active {
+  background-color: var(--black-75);
+}
+#aside-services footer button svg {
+  width: 24px;
+  height: 24px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+#aside-services.open {
+  height: 100%;
+}
+#aside-services.open header,
+#aside-services.open section {
+  display: flex;
+}
+#aside-services.open footer button svg {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 1200px) {
+  #aside-services {
+    position: fixed;
+    right: 0;
+    max-height: initial;
+    height: calc(100vh - 119px);
+    width: 375px;
+    z-index: 2;
+    top: 118px;
+    bottom: initial;
+  }
+  #aside-services.open {
+    height: calc(100vh - 119px);
+  }
+  #aside-services header,
+#aside-services section {
+    display: flex;
+  }
+  #aside-services footer {
+    height: 80px;
+  }
+  #aside-services footer > button {
+    display: none;
+  }
+  #aside-services footer > div {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 22px;
+  }
+  #aside-services footer > div .total {
+    font-size: 29px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

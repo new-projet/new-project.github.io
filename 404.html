@@ -181,102 +181,26 @@
       <hr class="italy" />
     </header>
 
-    <section class="page blue" id="schedules-services">
-      <header>
-        <h1>Escolha os Serviços</h1>
-      </header>
-
-      <div class="with-aside">
-        <main>
-          <div class="options">
-            <label>
-              <input type="checkbox" name="service" value="1" checked />
-              <div class="square">
-                <div></div>
-              </div>
-              <div class="content">
-                <div class="name">Revisão</div>
-                <div class="description">Veriﬁcação mínima necessária.</div>
-                <div class="price">R$100,00</div>
-              </div>
-            </label>
-            <label>
-              <input type="checkbox" name="service" value="1" checked />
-              <div class="square">
-                <div></div>
-              </div>
-              <div class="content">
-                <div class="name">Alinhamento</div>
-                <div class="description">Alinhamento e balanceamento.</div>
-                <div class="price">R$400,00</div>
-              </div>
-            </label>
-            <label>
-              <input type="checkbox" name="service" value="1" checked />
-              <div class="square">
-                <div></div>
-              </div>
-              <div class="content">
-                <div class="name">Filtros</div>
-                <div class="description">
-                  Troca de filtro de ar e combustível.
-                </div>
-                <div class="price">R$200,00</div>
-              </div>
-            </label>
-          </div>
-
-          <form action="schedules-services.html">
-            <footer class="fixed">
-              <a href="schedules-time-options.html">Voltar</a>
-              <button type="submit">Continuar</button>
-            </footer>
-          </form>
-        </main>
-
-        <aside id="aside-services">
-          <header>Resumo</header>
-          <section>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Alinhamento</td>
-                  <td class="price">R$ 0,00</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <footer>
-            <button type="button" id="btn-summary-toggle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="64.317"
-                height="64.317"
-                viewBox="0 0 64.317 64.317"
-              >
-                <path
-                  d="M9.779,27.858l12.3-12.274,12.3,12.274,3.779-3.779L22.079,8,6,24.079Z"
-                  transform="translate(10.079 13.439)"
-                />
-              </svg>
-            </button>
-            <div>
-              <span>Total</span>
-              <span class="total">R$ 0,00</span>
+    <section class="page" id="error">
+        <div class="columns">
+            <div class="column">
+                <header>
+                    <h1>
+                        <span class="desktop"><b>Uno</b> &nbsp; problema ocorrido!</span>
+                        <span class="mobile">Problema ocorrido no <b>Mobi</b>le!</span> 
+                    </h1>
+                </header>
+                <p>Tente novamente mais tarde.</p>
             </div>
-          </footer>
-        </aside>
-      </div>
+            <div class="column">
+                <picture>
+                    <source srcset="assets/images/uno.png" media="(min-width: 1200px)"/>
+                    <source srcset="assets/images/mobi@2x.png" media="(min-width: 320px)"/>
+                    <img src="assets/images/mobi.png" alt="Mobi"/>
+                </picture>
+            </div>
+        </div>
+   
     </section>
-
-    <script>
-      const painel = document.querySelector('#aside-services');
-      const botao = document.querySelector('#btn-summary-toggle');
-
-      botao.addEventListener('click', () => {
-        painel.classList.toggle('open');
-      });
-    </script>
-    <script src="assets/js/menu.js"></script>
   </body>
 </html>
